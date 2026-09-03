@@ -41,6 +41,17 @@ Review notes should be brief and audit-friendly. Useful tags include:
 
 ## Reliability Reporting
 
-A full public release should report reviewer training, double-coded subset size,
-agreement statistics, and adjudication procedure. The public repository does not
-include raw human review sheets.
+Public-exam automatic scores align strongly with independent review at the answer
+level (`r = 0.925`, `rho = 0.928`) and model level (`r = 0.992`, `rho = 0.986`).
+For real cases, the equal-weight mean of the two lawyers gives lower answer-level
+agreement (`r = 0.422`, `rho = 0.364`) and more stable model-level agreement
+(`r = 0.800`, `rho = 0.577`).
+
+The two real-case lawyers' quadratic-weighted kappa is `0.669`, `0.577`, and `0.579`
+for citation relevance, constraint extraction, and argument validity. Their pooled
+dimension means are `69.75`, `71.38`, and `75.44`, respectively. Both lawyers place
+constraint extraction below argument validity; a 10,000-draw prompt-cluster bootstrap
+estimates the gap at `4.06` points (95% CI `[1.38, 6.69]`).
+
+The public-exam reviewers and both real-case lawyers were excluded from benchmark
+construction. Raw human review sheets remain outside the public repository.

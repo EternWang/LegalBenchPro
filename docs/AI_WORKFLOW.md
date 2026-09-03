@@ -13,6 +13,8 @@ release decisions, and paper claims under human control.
 6. Score real-case answers with the A/B/C legal-reasoning rubric.
 7. Validate selected rows against human legal review.
 8. Analyze transfer, human agreement, length effects, and error patterns.
+9. Audit clustered robustness on 76 real-case prompts and evaluator stability on 200
+   fixed answers without substituting those subsets for the full 256-prompt corpus.
 
 ## Where AI Assistance Is Used
 

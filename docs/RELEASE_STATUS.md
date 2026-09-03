@@ -6,8 +6,7 @@ release.
 ## Included
 
 - Benchmark composition and evaluation counts.
-- A small public figure set rendered from the paper figure source in the submitted zip
-  package.
+- A small public figure set synchronized with Figures 1-4 in the current manuscript.
 - High-level metadata about sources, rows, model groups, and response counts.
 - Scoring, annotation, data-card, and AI-workflow documentation.
 - Lightweight workbook helper utilities.

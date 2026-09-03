@@ -26,12 +26,16 @@ LegalScope has two connected tracks.
 | Track | What It Tests | Scale |
 | --- | --- | ---: |
 | Public legal exams | Reference-aware open-ended legal-exam answering | 868 questions |
-| Chinese real cases | Stance-aware legal reasoning over de-identified civil judgments | 76 prompts |
+| Chinese real cases | Stance-aware legal reasoning over de-identified civil judgments | 256 prompts |
 
-The real-case track is built from 15 de-identified Chinese civil judgments and 38
-legal issues. Many issues are converted into paired support/opposition prompts so that
+The real-case track is built from 54 de-identified Chinese civil judgments and 128
+legal issues. The issues are typically converted into paired support/opposition prompts so that
 models must construct statute-grounded arguments under an assigned stance rather than
 imitate the observed judgment outcome.
+
+Figure 1 also shows the reliability audit. Its 1,520-answer clustered analysis uses an
+audited subset of 76 prompts from 15 judgments; it should not be read as the size of the
+expanded real-case corpus.
 
 ## Evaluation Protocol
 
@@ -49,7 +53,7 @@ The scoring protocol is validated against human legal review on overlapping subs
 
 ## Experiments and Results
 
-Across 20 model groups, LegalScope evaluates 17,360 public-exam responses and 1,520
+Across 20 model groups, LegalScope evaluates 17,360 public-exam responses and 5,120
 real-case responses. Public-exam scores correlate with real-case scores, but they do
 not fully predict real-case performance, ranking changes, or reasoning-mode gains.
 
@@ -61,8 +65,9 @@ The main real-case bottleneck is constraint extraction. Models can often write f
 legal arguments while missing the operative facts, procedural conditions, evidence
 boundaries, or assigned stance that makes the answer legally controlled.
 
-Automated evaluation is more reliable on public-exam answers than on case-based legal
-analysis, which is why the benchmark keeps expert-grounded validation in the loop.
+Automated evaluation is more reliable on public-exam answers (answer-level
+`r = 0.925`) than on case-based legal analysis (pooled-lawyer answer-level
+`r = 0.422`), which is why the benchmark keeps expert-grounded validation in the loop.
 
 ## Public Release Boundary
 

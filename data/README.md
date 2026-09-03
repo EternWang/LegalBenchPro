@@ -10,18 +10,21 @@ this repository.
 | --- | --- |
 | `metadata/dataset_summary.json` | Machine-readable counts and release boundary. |
 | `metadata/model_groups.csv` | The 20 model groups used in the evaluation tables. |
-| `metadata/source_composition.csv` | Public-exam and real-case source composition. |
+| `metadata/source_composition.csv` | Country, U.S. source, and legal-category composition. Percentages use the matching split/dimension as their denominator. |
 
 ## Snapshot Counts
 
 | Component | Count |
 | --- | ---: |
 | Public legal-exam items | 868 |
-| Real-case issue-stance prompts | 76 |
-| Total dataset items | 944 |
+| Real-case issue-stance prompts | 256 |
+| Total dataset items | 1,124 |
 | Model groups | 20 |
-| Dataset model responses | 18,880 |
+| Dataset model responses | 22,480 |
 | Human-validation responses | 1,800 |
+
+The machine-readable summary also records the smaller 76-prompt, 15-judgment
+reliability-audit subset used for clustered robustness checks in the paper.
 
 ## Release Boundary
 

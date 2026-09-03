@@ -1,26 +1,28 @@
 split,dimension,value,count,percent
-public_exam,jurisdiction,Virginia,183,21.1
-public_exam,jurisdiction,California,117,13.5
-public_exam,jurisdiction,New York,102,11.8
-public_exam,jurisdiction,China,100,11.5
-public_exam,jurisdiction,United Kingdom,86,9.9
-public_exam,jurisdiction,Australia,78,9.0
-public_exam,jurisdiction,Maryland,75,8.6
-public_exam,jurisdiction,Georgia,70,8.1
-public_exam,jurisdiction,US (general),57,6.6
-public_exam,legal_domain,Business / Commercial,216,24.9
-public_exam,legal_domain,Medicine / Health,116,13.4
-public_exam,legal_domain,Tort,127,14.6
-public_exam,legal_domain,Legal Foundations,68,7.8
-public_exam,legal_domain,Trusts / Estates,61,7.0
-public_exam,legal_domain,Family Law,58,6.7
-public_exam,legal_domain,Procedure / Evidence,58,6.7
-public_exam,legal_domain,Criminal Law,54,6.2
-public_exam,legal_domain,Legal Ethics,38,4.4
-public_exam,legal_domain,Contract,12,1.4
-public_exam,legal_domain,Property,12,1.4
-public_exam,legal_domain,Other,48,5.5
-real_case,legal_domain,Medicine / Health,50,65.8
-real_case,legal_domain,Tort,10,13.2
-real_case,legal_domain,Contract,14,18.4
-real_case,legal_domain,Property,2,2.6
+public_exam,country,United States,604,69.6
+public_exam,country,China,100,11.5
+public_exam,country,United Kingdom,86,9.9
+public_exam,country,Australia,78,9.0
+public_exam_us_source,source,New York / NCBE MEE reprint,102,16.9
+public_exam_us_source,source,Maryland UBE law,75,12.4
+public_exam_us_source,source,Virginia / U.S. bar law,183,30.3
+public_exam_us_source,source,California general U.S. law,100,16.6
+public_exam_us_source,source,Uniform Bar Examination law,57,9.4
+public_exam_us_source,source,Georgia bar exam law,70,11.6
+public_exam_us_source,source,California fictional State of Columbia,17,2.8
+public_exam,legal_category,Foundations of Legal Knowledge,68,7.8
+public_exam,legal_category,Business Organizations / Agency,126,14.5
+public_exam,legal_category,Secured Transactions / Commercial Law,67,7.7
+public_exam,legal_category,Tort,243,28.0
+public_exam,legal_category,Family,58,6.7
+public_exam,legal_category,Professional Responsibility / Legal Ethics,38,4.4
+public_exam,legal_category,Succession / Trusts / Estates,61,7.0
+public_exam,legal_category,Administrative Law,21,2.4
+public_exam,legal_category,Civil Procedure,26,3.0
+public_exam,legal_category,Civil / Civil Procedure,22,2.5
+public_exam,legal_category,Criminal Procedure,23,2.6
+public_exam,legal_category,Commercial / Company Law,23,2.6
+public_exam,legal_category,Other (categories with fewer than 20 samples),92,10.6
+real_case,legal_category,Tort,202,78.9
+real_case,legal_category,Contract,34,13.3
+real_case,legal_category,Property,20,7.8

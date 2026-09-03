@@ -8,11 +8,11 @@ Public-exam answers receive one reference-aware score from 0 to 4.
 
 | Score | Anchor |
 | ---: | --- |
-| 0 | Nonresponsive, legally irrelevant, or opposite to the reference answer. |
-| 1 | Captures roughly one core unit such as issue, rule, application, or conclusion. |
-| 2 | Captures about two core units but misses major substance. |
-| 3 | Mostly matches the reference answer with limited gaps. |
-| 4 | Matches the core issue, rule/test, application, and conclusion without substantive conflict. |
+| 0 | Wrong, irrelevant, or not evaluable. |
+| 1 | Generic or only weakly related legal statements. |
+| 2 | Relevant legal content that applies the reference answer incompletely. |
+| 3 | The core direction is correct, but some elements are missing. |
+| 4 | Covers the decisive legal points and reaches a compatible conclusion. |
 
 ## Real-Case A/B/C Rubric
 
@@ -40,3 +40,7 @@ for ordinary incompleteness. Severe failures such as stance reversal, non-answer
 refusal, major truncation, or unusable output remain capped at very low scores. If an
 answer lacks a responsive legal basis, citation relevance can be zero while argument
 or constraint dimensions may still receive limited credit for substantive reasoning.
+
+The final calibrated setting yields a full-split real-case mean of `65.3`, with `54.5%`
+of dimension scores at 3 or 4. On the 200-answer Lawyer 1 overlap, the automatic mean
+is `66.8` versus the lawyer mean of `75.5`.

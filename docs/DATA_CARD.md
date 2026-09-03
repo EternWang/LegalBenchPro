@@ -17,17 +17,17 @@ studied separately.
 | Component | Count |
 | --- | ---: |
 | Public legal-exam items | 868 |
-| Real-case issue-stance prompts | 76 |
-| Total dataset items | 944 |
+| Real-case issue-stance prompts | 256 |
+| Total dataset items | 1,124 |
 | Model groups | 20 |
 | Public-exam model responses | 17,360 |
-| Real-case model responses | 1,520 |
-| Total dataset model responses | 18,880 |
+| Real-case model responses | 5,120 |
+| Total dataset model responses | 22,480 |
 | Human-scored public-exam items | 80 |
 | Human-scored real-case prompts | 10 |
 | Human-validation responses | 1,800 |
-| De-identified Chinese civil judgments | 15 |
-| Real-case legal issues | 38 |
+| De-identified Chinese civil judgments | 54 |
+| Real-case legal issues | 128 |
 
 See `data/metadata/dataset_summary.json` for the machine-readable summary.
 
@@ -44,13 +44,22 @@ China, U.K., and Australia sources.
 The real-case split contains issue-stance prompts derived from de-identified Chinese
 civil judgments. Each prompt asks the model to reason from a structured case setting
 under a specified stance. It is scored across citation relevance, constraint
-extraction, and argument validity.
+extraction, and argument validity. The corpus contains 202 Tort prompts, 34 Contract
+prompts, and 20 Property prompts.
 
 ### Human Validation
 
 The human-validation subset covers 80 public-exam items and 10 real-case prompts
-across the same 20 model groups. It is used to compare automated/model-judge scores
-with human legal review.
+across the same 20 model groups, for 1,600 public-exam answers and 200 real-case
+answers. The real-case human score is the equal-weight mean of two practicing Chinese
+lawyers. It is used to compare automated/model-judge scores with human legal review.
+
+### Reliability-Audit Subsets
+
+The paper's clustered robustness analysis uses 76 prompts from 15 judgments (1,520
+model responses). A separate fixed-answer stability check rescored the same 200 blinded
+answers five times. These audit subsets should not be mistaken for the full 256-prompt
+real-case split.
 
 ## Public Release Boundary
 

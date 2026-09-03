@@ -27,29 +27,34 @@ non-de-identified case materials.
 | Component | Count |
 | --- | ---: |
 | Public legal-exam questions | 868 |
-| Real-case issue-stance prompts | 76 |
-| De-identified Chinese civil judgments | 15 |
-| Legal issues extracted from judgments | 38 |
+| Real-case issue-stance prompts | 256 |
+| De-identified Chinese civil judgments | 54 |
+| Legal issues extracted from judgments | 128 |
 | Model groups evaluated | 20 |
 | Public-exam model responses | 17,360 |
-| Real-case model responses | 1,520 |
-| Total dataset model responses | 18,880 |
+| Real-case model responses | 5,120 |
+| Total dataset model responses | 22,480 |
 | Human-validation responses | 1,800 |
 
-The pipeline figure above is rendered from `8.pdf`, which is referenced by the paper
-source. The full paper PDF is not committed to this repository.
+The pipeline figure above is Figure 1 from the current manuscript. Its reliability-audit
+boxes describe a 76-prompt, 15-judgment subset (1,520 model responses), not the full
+256-prompt real-case split. The full paper PDF is not committed to this repository.
 
 ## Main Findings
 
 - Public-exam scores correlate with Chinese real-case scores at the model level
   (Pearson `r = 0.835`, Spearman `rho = 0.661`), but rankings and reasoning-mode gains
   do not transfer uniformly.
+- Across the 20 model groups, the public-exam mean is `72.0` and the real-case mean is
+  `65.3` on the 0-100 scale.
 - Real-case legal reasoning exposes a constraint-extraction bottleneck: models write
   fluent legal arguments more easily than they recover the operative legal and factual
-  conditions that control those arguments.
+  conditions that control those arguments (`73.3` argument validity versus `54.8`
+  constraint extraction).
 - Automated evaluation aligns strongly with human review on public-exam answers
   (answer-level Pearson `r = 0.925`) but weakens on real-case analysis
-  (`r = 0.450`), showing why expert-grounded evaluation remains important.
+  (pooled-lawyer answer-level `r = 0.422`), showing why expert-grounded evaluation
+  remains important.
 
 ## Repository Map
 
@@ -57,6 +62,7 @@ source. The full paper PDF is not committed to this repository.
 assets/figures/
   paper_collection_pipeline.png
   paper_score_distribution.png
+  paper_jurisdiction_means.png
   paper_transfer_model_judge.png
   paper_transfer_human.png
 data/

@@ -4,11 +4,13 @@ The repository keeps a small public figure set in `assets/figures/`:
 
 | Repository file | Source |
 | --- | --- |
-| `assets/figures/paper_collection_pipeline.png` | Rendered from `8.pdf`; the public image uses the corrected 20-model count. |
-| `assets/figures/paper_score_distribution.png` | Rendered from `p3_cropped_blank_removed.pdf`. |
-| `assets/figures/paper_transfer_model_judge.png` | Rendered from `slide05_cropped.pdf`. |
-| `assets/figures/paper_transfer_human.png` | Rendered from `slide06_cropped.pdf`. |
+| `assets/figures/paper_collection_pipeline.png` | Figure 1, cropped from page 4 of the current manuscript PDF. |
+| `assets/figures/paper_score_distribution.png` | Figure 2, cropped from page 7 of the current manuscript PDF. |
+| `assets/figures/paper_jurisdiction_means.png` | Figure 3, cropped from page 8 of the current manuscript PDF. |
+| `assets/figures/paper_transfer_model_judge.png` | Figure 4(a), cropped from page 16 of the current manuscript PDF. |
+| `assets/figures/paper_transfer_human.png` | Figure 4(b), cropped from page 16 of the current manuscript PDF. |
 
 The full paper PDF and source package are not committed to this public repository.
-Earlier Drive-export figure assets were removed because several were not synchronized
-with the current paper text or still contained legacy labels.
+The crops intentionally exclude manuscript captions so the repository can provide
+accessible prose next to each image. Figure 1's 1,520-response label refers to the
+paper's audited subset, while the expanded real-case corpus contains 5,120 responses.
